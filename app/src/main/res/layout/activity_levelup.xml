@@ -1,6 +1,606 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="39dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <ImageButton
+        android:id="@+id/iconHappySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/happy"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBook" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProComp"
+        app:layout_constraintStart_toEndOf="@+id/tvProComp"
+        app:layout_constraintTop_toTopOf="@+id/tvProComp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProStip"
+        app:layout_constraintStart_toEndOf="@+id/tvProStip"
+        app:layout_constraintTop_toTopOf="@+id/tvProStip" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProcent"
+        app:layout_constraintStart_toEndOf="@+id/tvProcent"
+        app:layout_constraintTop_toTopOf="@+id/tvProcent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProBook"
+        app:layout_constraintStart_toEndOf="@+id/tvProBook"
+        app:layout_constraintTop_toTopOf="@+id/tvProBook" />
+
+    <TextView
+        android:id="@+id/tvdiplom"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="გასაცემი\nდიპლომი"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btndiplom"
+        app:layout_constraintStart_toStartOf="@+id/btndiplom"
+        app:layout_constraintTop_toBottomOf="@+id/btndiplom" />
+
+    <TextView
+        android:id="@+id/limit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="5000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toStartOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+
+    <ImageButton
+        android:id="@+id/btnUniver"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/university" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="ახალი \nკორპუსი"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnUniver"
+        app:layout_constraintStart_toStartOf="@+id/btnUniver"
+        app:layout_constraintTop_toBottomOf="@+id/btnUniver" />
+
+    <TextView
+        android:id="@+id/tvuniver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/limit"
+        app:srcCompat="@drawable/kursdamtavrebul" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="ბაკალავრ\nდამთავრებული"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <TextView
+        android:id="@+id/studed"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="250 000₾"
+        android:textColor="#4CAF50"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="20₾"
+        android:textColor="#4CAF50"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageButton
+        android:id="@+id/btndiplom"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/diplome" />
+
+    <TextView
+        android:id="@+id/reiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="2485"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="@+id/imageButton6" />
+
+    <TextView
+        android:id="@+id/moneybalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="0"
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="₾"
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="@+id/moneybalance"
+        app:layout_constraintStart_toEndOf="@+id/moneybalance"
+        app:layout_constraintTop_toTopOf="@+id/moneybalance"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/studnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/btnComp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBook"
+        app:layout_constraintEnd_toStartOf="@+id/btnBook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBook"
+        app:srcCompat="@drawable/comp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="კომპიუტერი"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnComp"
+        app:layout_constraintStart_toStartOf="@+id/btnComp"
+        app:layout_constraintTop_toBottomOf="@+id/btnComp" />
+
+    <TextView
+        android:id="@+id/tvComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="1250₾"
+        android:textColor="#4CAF50"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageButton
+        android:id="@+id/btnBook"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studed"
+        app:srcCompat="@drawable/book" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="უფასო წიგნი"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnBook"
+        app:layout_constraintStart_toStartOf="@+id/btnBook"
+        app:layout_constraintTop_toBottomOf="@+id/btnBook" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="45₾"
+        android:textColor="#4CAF50"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/tvBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <ImageButton
+        android:id="@+id/btnStipendia"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBook"
+        app:layout_constraintTop_toTopOf="@+id/btnBook"
+        app:srcCompat="@drawable/scholarship" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="სტიპენდია"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnStipendia"
+        app:layout_constraintStart_toStartOf="@+id/btnStipendia"
+        app:layout_constraintTop_toBottomOf="@+id/btnStipendia" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="850₾"
+        android:textColor="#4CAF50"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/tvStipendia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/previous" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:srcCompat="@drawable/studnetsmain" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back"
+        app:srcCompat="@drawable/money" />
+
+    <ImageButton
+        android:id="@+id/iconWorld"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="@+id/btnUniver"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:srcCompat="@drawable/iconworld" />
+
+    <TextView
+        android:id="@+id/reitingWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bpg_nino_mtavruli_bold"
+        android:gravity="center"
+        android:text="31849"
+        app:layout_constraintBottom_toBottomOf="@+id/iconWorld"
+        app:layout_constraintEnd_toStartOf="@+id/iconWorld"
+        app:layout_constraintTop_toTopOf="@+id/iconWorld"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintStart_toStartOf="@+id/btndiplom"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:srcCompat="@drawable/localicon" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/studnetsmain" />
+
+    <TextView
+        android:id="@+id/tvProBook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBook"
+        app:layout_constraintEnd_toEndOf="@+id/btnBook"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnBook" />
+
+    <TextView
+        android:id="@+id/tvProDip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btndiplom"
+        app:layout_constraintEnd_toEndOf="@+id/btndiplom"
+        app:layout_constraintStart_toStartOf="@+id/btndiplom" />
+
+    <TextView
+        android:id="@+id/tvProStip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStipendia"
+        app:layout_constraintEnd_toEndOf="@+id/btnStipendia"
+        app:layout_constraintStart_toStartOf="@+id/btnStipendia" />
+
+    <TextView
+        android:id="@+id/tvProComp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComp"
+        app:layout_constraintEnd_toEndOf="@+id/btnComp"
+        app:layout_constraintStart_toStartOf="@+id/btnComp" />
+
+    <TextView
+        android:id="@+id/tvProcent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProDip"
+        app:layout_constraintStart_toEndOf="@+id/tvProDip"
+        app:layout_constraintTop_toTopOf="@+id/tvProDip" />
+
+    <ImageButton
+        android:id="@+id/agry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iconHappySmall"
+        app:srcCompat="@drawable/angry" />
+
+    <ImageButton
+        android:id="@+id/iconHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iconHappySmall"
+        app:srcCompat="@drawable/happyy" />
+
+    <ImageButton
+        android:id="@+id/iconConfused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iconHappySmall"
+        app:srcCompat="@drawable/confused" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
